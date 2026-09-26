@@ -804,9 +804,9 @@ class FieldSafetyTimer {
                     <div class="timer-text status-${team.status === 'paused' ? (team.pausedFromStatus || 'active') : team.status}">${timerDisplay}</div>
 
                     <div class="progress-ring">
-                        <svg>
-                            <circle class="progress-ring-circle"></circle>
-                            <circle class="progress-ring-progress status-${team.status === 'paused' ? (team.pausedFromStatus || 'active') : team.status}"
+                        <svg viewBox="0 0 120 120">
+                            <circle class="progress-ring-circle" cx="60" cy="60" r="52"></circle>
+                            <circle class="progress-ring-progress status-${team.status === 'paused' ? (team.pausedFromStatus || 'active') : team.status}" cx="60" cy="60" r="52"
                                     style="stroke-dashoffset: ${offset}"></circle>
                         </svg>
                     </div>
