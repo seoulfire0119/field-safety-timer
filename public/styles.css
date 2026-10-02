@@ -66,6 +66,33 @@ body {
     transform: scale(1.05);
 }
 
+.btn-help {
+    background: #1976d2;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    color: white;
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-help:hover, .btn-help:active {
+    background: #1565c0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .btn-help {
+        height: 45px;
+        padding: 0 10px;
+        font-size: 0.85rem;
+    }
+}
 /* 상황판 */
 .status-overview {
     display: grid;
